@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Link Fontawsome Liberaries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Link Css File -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- مؤقتا فونت عربي -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="music-player">
+
+    <nav>
+      <div class="circle">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div class="circle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <img src="img/quraan.jpg" alt="" class="song-img">
+    <h1>المنشاوي</h1>
+    <p>محمد رسول الله والذين معه أشذاء علي الكفار</p>
+    
+    <audio id="song">
+      <source  src="Facebook 1319105112313313(m4a).m4a">
+    </audio>
+
+    <input type="range" step="" min="0" max="51" value="0" id="progress">
+
+    <div class="controls">
+      <div><i class="fa-solid fa-backward"></i></div>
+      <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlicon"></i></div>
+      <div><i class="fa-solid fa-forward"></i></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
